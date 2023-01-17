@@ -69,7 +69,7 @@ export default function Register(params) {
         <div>
           <p className="text-[12px] font-semibold italic text-[#3B3B3B]">
             Already Have Account?
-            <span className="underline" onClick={toLogin}>
+            <span className="underline ml-[2px]" onClick={toLogin}>
               Login !
             </span>
           </p>

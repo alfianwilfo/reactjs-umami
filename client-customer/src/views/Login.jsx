@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import backgroundLogin from "../assets/bek.jpeg";
 export default function Login() {
   let navigate = useNavigate();
 
@@ -7,7 +8,10 @@ export default function Login() {
   };
 
   return (
-    <div className="w-screen h-screen grid grid-cols-12">
+    <div
+      style={{ backgroundImage: "url('../assets/bek.jpeg')" }}
+      className="w-screen h-screen grid grid-cols-12"
+    >
       <div className="col-start-2 col-end-12 grid content-center">
         <form>
           <div>
