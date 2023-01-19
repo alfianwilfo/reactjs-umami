@@ -10,7 +10,17 @@ export default function Home() {
             <button>Logout</button>
           </div>
         </div>
-        <div></div>
+        <div>
+          <div>
+            <p>Delivery to</p>
+          </div>
+          <div>
+            <div></div>
+            <div>
+              <p></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
