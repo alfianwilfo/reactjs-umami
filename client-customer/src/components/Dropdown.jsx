@@ -1,7 +1,9 @@
 export default function Dropdown() {
   return (
     <>
-      <div>halo</div>
+      <div>
+        <button className="text-white">Logout</button>
+      </div>
     </>
   );
 }
