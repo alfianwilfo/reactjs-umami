@@ -23,12 +23,12 @@ export default function Home() {
   };
 
   return (
-    <div className="grid grid-cols-12">
+    <div className="grid grid-cols-12 font-jakarta">
       <div className="col-start-2 col-end-12 flex flex-col gap-y-[40px]">
         <div className=" mt-[12px] ">
           <div className="flex flex-row justify-between">
-            <div className="font-bold grid content-center">
-              <div>
+            <div className=" grid content-center">
+              <div className="">
                 <p>Welcome, Irene</p>
               </div>
             </div>
@@ -77,15 +77,19 @@ export default function Home() {
         <div className="flex flex-col gap-y-[10px]">
           <div className="font-bold text-[19px]">Recomended !</div>
           <div>
-            <div className="bg-[#FFE5E5] rounded shadow-2xl w-1/2">
-              <div>
-                <img src={enak} alt="" className=" rounded-full" />
+            <div className="bg-[#FFE5E5] rounded-[40px] shadow-lg drop-shadow-lg w-[48%] grid grid-cols-12">
+              <div className="col-start-2 col-end-12 py-[20px]">
+                <div className=" flex justify-center">
+                  <div>
+                    <img src={enak} alt="" className="w-[60px] rounded-full" />
+                  </div>
+                </div>
+                <div className="font-bold text-[18px]">Tirex</div>
+                <div className="text-[9px] font-semibold">
+                  Ayam goreng + nasi + sambal + lalapan
+                </div>
+                <div className="font-semibold">Rp. 15.000</div>
               </div>
-              <div className="font-bold text-[18px]">Tirex</div>
-              <div className="text-[9px] font-semibold">
-                Ayam goreng + nasi + sambal + lalapan
-              </div>
-              <div className="font-semibold">Rp. 15.000</div>
             </div>
           </div>
         </div>
