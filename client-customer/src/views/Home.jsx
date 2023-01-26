@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <div className="grid grid-cols-12">
-      <div className="col-start-2 col-end-12 mt-[12px]">
+      <div className="col-start-2 col-end-12 mt-[12px] ">
         <div className="flex flex-row justify-between">
           <div className="font-bold grid content-center">
             <div>
@@ -45,11 +45,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-12">
-          <div className="col-start-1">
+        <div className="grid grid-cols-12 mt-[20px]">
+          <div className="col-span-12">
             <input
               type="text"
-              className="outline outline-offset-2 outline-1 outline-[#B56A6A] rounded-[10px] px-[5px]"
+              placeholder="What would you like to order ?"
+              className="outline outline-offset-[7px] w-full outline-[2px] placeholder:italic placeholder:text-black/50 h-[30px] text-[14px] outline-[#B56A6A] rounded-[2px] px-[5px]"
             />
           </div>
         </div>
