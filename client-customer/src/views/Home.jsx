@@ -4,6 +4,15 @@ import down from "../assets/down.svg";
 import { useState } from "react";
 export default function Home() {
   const [statusDD, setStatusDD] = useState(false);
+  let change = () => {
+    console.log("masuk");
+    if (statusDD === false) {
+      setStatusDD(true);
+    } else {
+      setStatusDD(false);
+    }
+  };
+
   return (
     <div className="grid grid-cols-12">
       <div className="col-start-2 col-end-12 mt-[12px]">
@@ -18,7 +27,7 @@ export default function Home() {
               <img src={prof} alt="" srcset="" />
             </div>
             <div>
-              <img src={down} alt="" srcset="" />
+              <img src={down} alt="" srcset="" onClick={change} />
             </div>
             {statusDD ? <Dropdown /> : null}
           </div>
