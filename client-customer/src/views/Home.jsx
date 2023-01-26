@@ -5,12 +5,21 @@ import searchIcon from "../assets/search.svg";
 import { useState } from "react";
 export default function Home() {
   const [statusDD, setStatusDD] = useState(false);
+  const [s, setS] = useState("");
   let change = () => {
     if (statusDD === false) {
       setStatusDD(true);
     } else {
       setStatusDD(false);
     }
+  };
+  let cari = () => {
+    console.log("MASUK");
+  };
+
+  let changeHandler = (e) => {
+    setS(e.target.value);
+    console.log(e.target.value);
   };
 
   return (
@@ -51,12 +60,15 @@ export default function Home() {
             <div className="col-span-12">
               <input
                 type="text"
+                onChange={changeHandler}
                 placeholder="What would you like to order ?"
                 className="outline outline-offset-[7px] w-full outline-[2px] placeholder:italic placeholder:text-black/50 h-[30px] text-[14px] outline-[#B56A6A] rounded-[2px] px-[5px] pr-[50px]"
               />
             </div>
             <div className="fixed right-[50px]">
-              <img src={searchIcon} alt="" className="w-[30px]" />
+              <button onClick={cari}>
+                <img src={searchIcon} alt="" className="w-[30px]" />
+              </button>
             </div>
           </div>
         </div>
