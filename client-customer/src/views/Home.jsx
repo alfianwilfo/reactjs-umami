@@ -23,12 +23,12 @@ export default function Home() {
   };
 
   return (
-    <div className="grid grid-cols-12">
+    <div className="grid grid-cols-12 font-jakarta">
       <div className="col-start-2 col-end-12 flex flex-col gap-y-[40px]">
         <div className=" mt-[12px] ">
           <div className="flex flex-row justify-between">
-            <div className="font-bold grid content-center">
-              <div>
+            <div className=" grid content-center">
+              <div className="">
                 <p>Welcome, Irene</p>
               </div>
             </div>
