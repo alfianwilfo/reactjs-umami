@@ -17,7 +17,10 @@ export default function Home() {
     console.log("MASUK");
   };
 
-  let changeHandler = () => {};
+  let changeHandler = (e) => {
+    setS(e.target.value);
+    console.log(e.target.value);
+  };
 
   return (
     <div className="grid grid-cols-12">
