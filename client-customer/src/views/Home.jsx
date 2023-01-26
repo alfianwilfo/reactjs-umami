@@ -77,7 +77,7 @@ export default function Home() {
         <div className="flex flex-col gap-y-[10px]">
           <div className="font-bold text-[19px]">Recomended !</div>
           <div>
-            <div className="bg-[#FFE5E5] rounded-[40px] shadow-lg w-1/2 grid grid-cols-12">
+            <div className="bg-[#FFE5E5] rounded-[40px] shadow-lg drop-shadow-lg w-1/2 grid grid-cols-12">
               <div className="col-start-2 col-end-12 py-[20px]">
                 <div className=" flex justify-center">
                   <div>
