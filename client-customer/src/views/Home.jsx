@@ -5,6 +5,7 @@ import searchIcon from "../assets/search.svg";
 import { useState } from "react";
 export default function Home() {
   const [statusDD, setStatusDD] = useState(false);
+  const [s, setS] = useState("");
   let change = () => {
     if (statusDD === false) {
       setStatusDD(true);
@@ -15,6 +16,8 @@ export default function Home() {
   let cari = () => {
     console.log("MASUK");
   };
+
+  let changeHandler = () => {};
 
   return (
     <div className="grid grid-cols-12">
@@ -54,6 +57,7 @@ export default function Home() {
             <div className="col-span-12">
               <input
                 type="text"
+                onChange={changeHandler}
                 placeholder="What would you like to order ?"
                 className="outline outline-offset-[7px] w-full outline-[2px] placeholder:italic placeholder:text-black/50 h-[30px] text-[14px] outline-[#B56A6A] rounded-[2px] px-[5px] pr-[50px]"
               />
