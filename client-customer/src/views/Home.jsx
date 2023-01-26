@@ -12,6 +12,9 @@ export default function Home() {
       setStatusDD(false);
     }
   };
+  let cari = () => {
+    console.log("MASUK");
+  };
 
   return (
     <div className="grid grid-cols-12">
@@ -56,7 +59,9 @@ export default function Home() {
               />
             </div>
             <div className="fixed right-[50px]">
-              <img src={searchIcon} alt="" className="w-[30px]" />
+              <button onClick={cari}>
+                <img src={searchIcon} alt="" className="w-[30px]" />
+              </button>
             </div>
           </div>
         </div>
