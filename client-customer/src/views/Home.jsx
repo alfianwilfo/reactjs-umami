@@ -1,11 +1,10 @@
 import prof from "../assets/prof.svg";
 import Dropdown from "../components/Dropdown";
-import down from "../assets/down.svg";
+import mapMarker from "../assets/marker.svg";
 import { useState } from "react";
 export default function Home() {
   const [statusDD, setStatusDD] = useState(false);
   let change = () => {
-    console.log("masuk");
     if (statusDD === false) {
       setStatusDD(true);
     } else {
@@ -22,25 +21,36 @@ export default function Home() {
               <p>Welcome, Irene</p>
             </div>
           </div>
-          <div className="flex flex-row">
+          <div className="flex flex-row relative">
             <div>
-              <img src={prof} alt="" srcset="" />
+              <img src={prof} alt="" srcset="" onClick={change} />
             </div>
-            <div>
-              <img src={down} alt="" srcset="" onClick={change} />
-            </div>
-            {statusDD ? <Dropdown /> : null}
+            {statusDD ? (
+              <div className="fixed top-[60px] right-[10px] bg-[#B56A6A] w-[70px] rounded flex justify-center">
+                <Dropdown />
+              </div>
+            ) : null}
           </div>
         </div>
         <div>
           <div>
             <p>Delivery to</p>
           </div>
-          <div>
-            <div></div>
+          <div className="flex flex-row">
             <div>
-              <p></p>
+              <img src={mapMarker} alt="" className="w-[20px]" />
             </div>
+            <div className="text-[13px]">
+              <p>Universitas advent indonesia (Ester Extension No.1)</p>
+            </div>
+          </div>
+        </div>
+        <div className="grid grid-cols-12">
+          <div className="col-start-1">
+            <input
+              type="text"
+              className="outline outline-offset-2 outline-1 outline-[#B56A6A] rounded-[10px] px-[5px]"
+            />
           </div>
         </div>
       </div>
