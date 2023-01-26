@@ -2,6 +2,7 @@ import prof from "../assets/prof.svg";
 import Dropdown from "../components/Dropdown";
 import mapMarker from "../assets/marker.svg";
 import searchIcon from "../assets/search.svg";
+import enak from "../assets/enak.jpeg";
 import { useState } from "react";
 export default function Home() {
   const [statusDD, setStatusDD] = useState(false);
@@ -73,8 +74,20 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div>
-          <div className="font-bold">Recomended !</div>
+        <div className="flex flex-col gap-y-[10px]">
+          <div className="font-bold text-[19px]">Recomended !</div>
+          <div>
+            <div className="bg-[#FFE5E5] rounded shadow-2xl w-1/2">
+              <div>
+                <img src={enak} alt="" className=" rounded-full" />
+              </div>
+              <div className="font-bold text-[18px]">Tirex</div>
+              <div className="text-[9px] font-semibold">
+                Ayam goreng + nasi + sambal + lalapan
+              </div>
+              <div className="font-semibold">Rp. 15.000</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
