@@ -1,6 +1,7 @@
 import prof from "../assets/prof.svg";
 import Dropdown from "../components/Dropdown";
 import mapMarker from "../assets/marker.svg";
+import searchIcon from "../assets/search.svg";
 import { useState } from "react";
 export default function Home() {
   const [statusDD, setStatusDD] = useState(false);
@@ -46,12 +47,17 @@ export default function Home() {
           </div>
         </div>
         <div className="grid grid-cols-12 mt-[20px]">
-          <div className="col-span-12">
-            <input
-              type="text"
-              placeholder="What would you like to order ?"
-              className="outline outline-offset-[7px] w-full outline-[2px] placeholder:italic placeholder:text-black/50 h-[30px] text-[14px] outline-[#B56A6A] rounded-[2px] px-[5px]"
-            />
+          <div className="col-span-12 flex flex-row relative grid grid-cols-12">
+            <div className="col-span-12">
+              <input
+                type="text"
+                placeholder="What would you like to order ?"
+                className="outline outline-offset-[7px] w-full outline-[2px] placeholder:italic placeholder:text-black/50 h-[30px] text-[14px] outline-[#B56A6A] rounded-[2px] px-[5px] pr-[50px]"
+              />
+            </div>
+            <div className="fixed right-[50px]">
+              <img src={searchIcon} alt="" className="w-[30px]" />
+            </div>
           </div>
         </div>
       </div>
