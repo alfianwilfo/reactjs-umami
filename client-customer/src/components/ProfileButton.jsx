@@ -16,7 +16,7 @@ export default function ProfileFunction() {
         <img src={prof} alt="" srcset="" onClick={change} />
       </div>
       {statusDD ? (
-        <div className="fixed top-[60px] right-[10px] bg-[#B56A6A] w-[70px] rounded flex justify-center">
+        <div className="fixed top-[60px] right-[10px] border-2 shadow-lg drop-shadow-lg border-black w-[70px] rounded flex justify-center">
           <Dropdown />
         </div>
       ) : null}
