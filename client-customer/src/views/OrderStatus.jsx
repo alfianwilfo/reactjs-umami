@@ -7,6 +7,12 @@ export default function OrderStatus() {
           <div>
             <WelcomeDeliverProfile />
           </div>
+          <div>Your order status</div>
+        </div>
+      </div>
+      <div className="w-screen">
+        <div className=" h-[50px] mx-[10px]   shadow-md drop-shadow-md ">
+          asds
         </div>
       </div>
     </>
