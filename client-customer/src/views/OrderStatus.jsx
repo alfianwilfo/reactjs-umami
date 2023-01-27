@@ -3,6 +3,7 @@ import done from "../assets/ceklisdone.svg";
 import undone from "../assets/ceklisundone.svg";
 import linedone from "../assets/linedone.svg";
 import lineundone from "../assets/lineundone.svg";
+import chatt from "../assets/chat.svg";
 export default function OrderStatus() {
   return (
     <>
@@ -73,6 +74,14 @@ export default function OrderStatus() {
               </div>
               <div>Done</div>
             </div>
+          </div>
+          <div>
+            <button className="h-[50px] w-full bg-[#F3F3F3] rounded px-[20px] text-[12px] italic text-left flex flex-row items-center gap-x-[10px]">
+              <div>
+                <img src={chatt} alt="" className="w-[20px]" />
+              </div>
+              <div>Chat with umami</div>
+            </button>
           </div>
         </div>
       </div>
