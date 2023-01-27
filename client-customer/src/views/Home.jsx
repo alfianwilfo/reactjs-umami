@@ -1,20 +1,10 @@
-import searchIcon from "../assets/search.svg";
 import enak from "../assets/enak.jpeg";
 import Hello from "../components/Hello";
 import { useState } from "react";
 import ProfileButton from "../components/ProfileButton";
 import Address from "../components/Address";
+import Search from "../components/Search";
 export default function Home() {
-  const [s, setS] = useState("");
-
-  let cari = () => {
-    console.log("MASUK");
-  };
-
-  let changeHandler = (e) => {
-    setS(e.target.value);
-  };
-
   return (
     <div className="grid grid-cols-12 font-jakarta">
       <div className="col-start-2 col-end-12 flex flex-col gap-y-[40px]">
@@ -36,21 +26,7 @@ export default function Home() {
             </div>
           </div>
           <div className="grid grid-cols-12 mt-[20px]">
-            <div className="col-span-12 flex flex-row relative grid grid-cols-12">
-              <div className="col-span-12">
-                <input
-                  type="text"
-                  onChange={changeHandler}
-                  placeholder="What would you like to order ?"
-                  className="outline outline-offset-[7px] w-full outline-[2px] placeholder:italic placeholder:text-black/50 h-[30px] text-[14px] outline-[#B56A6A] rounded-[2px] px-[5px] pr-[50px]"
-                />
-              </div>
-              <div className="fixed right-[50px]">
-                <button onClick={cari}>
-                  <img src={searchIcon} alt="" className="w-[30px]" />
-                </button>
-              </div>
-            </div>
+            <Search />
           </div>
         </div>
         <div className="flex flex-col gap-y-[10px]">
