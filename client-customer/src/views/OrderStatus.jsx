@@ -23,43 +23,55 @@ export default function OrderStatus() {
             </div>
             <div className="text-[12px]">note: Mau extra sambel</div>
           </div>
-          <div className="flex justify-center flex-row gap-x-[5px]">
-            <div className="grid content-center ">
+          <div className="flex justify-center flex-row gap-x-[5px] text-[10px]">
+            <div className="grid content-center">
+              <div className="flex justify-center flex-col">
+                <div className="flex justify-center">
+                  <div>
+                    <img src={done} alt="" className="w-[22px]" />
+                  </div>
+                </div>
+                <div>Confirm</div>
+              </div>
+            </div>
+            <div className="grid content-center">
+              <div className="flex justify-center">
+                <div className="w-[50px] h-[3px] rounded-lg bg-[#4ECB71]"></div>
+              </div>
+            </div>
+            <div className="grid content-center">
               <div className="flex justify-center">
                 <div>
-                  <img src={done} alt="" className="w-[22px]" />
+                  <img src={undone} alt="" className="w-[22px]" />
                 </div>
+              </div>
+              <div>Cook</div>
+            </div>
+            <div className="grid content-center">
+              <div className="flex justify-center">
+                <div className="w-[50px] h-[3px] rounded-lg bg-[#ABABAB]"></div>
               </div>
             </div>
             <div className="grid content-center">
               <div className="flex justify-center">
-                <img src={linedone} alt="" />
+                <div>
+                  <img src={undone} alt="" className="w-[22px]" />
+                </div>
+              </div>
+              <div>Deliver</div>
+            </div>
+            <div className="grid content-center">
+              <div className="flex justify-center">
+                <div className="w-[50px] h-[3px] rounded-lg bg-[#ABABAB]"></div>
               </div>
             </div>
             <div className="grid content-center">
-              <div>
-                <img src={undone} alt="" className="w-[22px]" />
+              <div className="flex justify-center">
+                <div>
+                  <img src={undone} alt="" className="w-[22px]" />
+                </div>
               </div>
-            </div>
-            <div>
-              <div>
-                <img src={lineundone} alt="" />
-              </div>
-            </div>
-            <div className="grid content-center">
-              <div>
-                <img src={undone} alt="" className="w-[22px]" />
-              </div>
-            </div>
-            <div>
-              <div>
-                <img src={lineundone} alt="" />
-              </div>
-            </div>
-            <div className="grid content-center">
-              <div>
-                <img src={undone} alt="" className="w-[22px]" />
-              </div>
+              <div>Done</div>
             </div>
           </div>
         </div>
