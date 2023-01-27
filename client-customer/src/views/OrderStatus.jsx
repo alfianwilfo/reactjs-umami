@@ -10,9 +10,12 @@ export default function OrderStatus() {
           <div>Your order status</div>
         </div>
       </div>
-      <div className="w-screen">
-        <div className=" h-[50px] mx-[10px]   shadow-md drop-shadow-md ">
-          asds
+      <div className="w-screen mt-[10px]">
+        <div className=" h-[100px] mx-[10px] p-[20px] shadow-md drop-shadow-md ">
+          <div className="flex justify-between">
+            <div>2 x Tirex</div>
+            <div>Rp. 20.000</div>
+          </div>
         </div>
       </div>
     </>
