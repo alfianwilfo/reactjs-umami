@@ -1,6 +1,6 @@
 export default function Hello() {
   return (
-    <div className="">
+    <div>
       <p>Welcome, Irene</p>
     </div>
   );
