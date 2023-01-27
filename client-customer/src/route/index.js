@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Login from "../views/Login";
 import Register from "../views/Register";
 import Home from "../views/Home";
+import OrderStatus from "../views/OrderStatus";
 let router = createBrowserRouter([
   {
     path: "/",
@@ -10,9 +11,10 @@ let router = createBrowserRouter([
     // loader: teamLoader,
     children: [
       {
-        path: "home",
+        path: "/",
         element: <Home />,
       },
+      { path: "/order-status", element: <OrderStatus /> },
     ],
   },
   {
