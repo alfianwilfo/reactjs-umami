@@ -1,19 +1,13 @@
-import prof from "../assets/prof.svg";
-import Dropdown from "../components/Dropdown";
 import mapMarker from "../assets/marker.svg";
 import searchIcon from "../assets/search.svg";
 import enak from "../assets/enak.jpeg";
+import Hello from "../components/Hello";
 import { useState } from "react";
+import ProfileButton from "../components/ProfileButton";
+
 export default function Home() {
-  const [statusDD, setStatusDD] = useState(false);
   const [s, setS] = useState("");
-  let change = () => {
-    if (statusDD === false) {
-      setStatusDD(true);
-    } else {
-      setStatusDD(false);
-    }
-  };
+
   let cari = () => {
     console.log("MASUK");
   };
@@ -28,19 +22,10 @@ export default function Home() {
         <div className=" mt-[12px] ">
           <div className="flex flex-row justify-between">
             <div className=" grid content-center">
-              <div className="">
-                <p>Welcome, Irene</p>
-              </div>
+              <Hello />
             </div>
-            <div className="flex flex-row relative">
-              <div>
-                <img src={prof} alt="" srcset="" onClick={change} />
-              </div>
-              {statusDD ? (
-                <div className="fixed top-[60px] right-[10px] bg-[#B56A6A] w-[70px] rounded flex justify-center">
-                  <Dropdown />
-                </div>
-              ) : null}
+            <div>
+              <ProfileButton />
             </div>
           </div>
           <div>
@@ -75,7 +60,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col gap-y-[10px]">
-          <div className="font-bold text-[19px]">Recomended !</div>
+          <div className="font-bold text-[19px]">Recommended !</div>
           <div>
             <div className="bg-[#FFE5E5] rounded-[40px] shadow-lg drop-shadow-lg w-[48%] grid grid-cols-12">
               <div className="col-start-2 col-end-12 py-[20px]">
