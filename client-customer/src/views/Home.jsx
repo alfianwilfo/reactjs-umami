@@ -1,10 +1,9 @@
-import mapMarker from "../assets/marker.svg";
 import searchIcon from "../assets/search.svg";
 import enak from "../assets/enak.jpeg";
 import Hello from "../components/Hello";
 import { useState } from "react";
 import ProfileButton from "../components/ProfileButton";
-
+import Address from "../components/Address";
 export default function Home() {
   const [s, setS] = useState("");
 
@@ -32,13 +31,8 @@ export default function Home() {
             <div>
               <p>Delivery to</p>
             </div>
-            <div className="flex flex-row">
-              <div>
-                <img src={mapMarker} alt="" className="w-[20px]" />
-              </div>
-              <div className="text-[13px]">
-                <p>Universitas advent indonesia (Ester Extension No.1)</p>
-              </div>
+            <div>
+              <Address />
             </div>
           </div>
           <div className="grid grid-cols-12 mt-[20px]">
